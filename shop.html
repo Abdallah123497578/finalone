@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Product-specific stylesheet -->
+        <link rel="stylesheet" href="product.css">
+        <!-- Google Fonts: Audiowide -->
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+        <title>Shop</title>
+        <style>
+            /* Use Audiowide font for navbar */
+            nav {
+                font-family: "Audiowide", sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <div class="logo">
+                <h1>Lotus Gaming</h1>
+            </div>
+            <ul class="nav-links">
+                <!-- Cart Icon -->
+                <li>
+                    <a href="cart.html">
+                        <div class="icon-cart">
+                            <!-- SVG Cart Icon -->
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                            </svg>
+                            <!-- Cart count -->
+                            <span>0</span>
+                        </div>
+                    </a>
+                </li>
+                <!-- Home Link -->
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <!-- Shop Dropdown -->
+                <li class="dropdown">
+                    <a href="shop.html">Shop Now</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="laptop.html">Laptops</a>
+                        </li>
+                        <li>
+                            <a href="pcs.html">PCs</a>
+                        </li>
+                        <li>
+                            <a href="mobile.html">Mobile</a>
+                        </li>
+                        <li>
+                            <a href="accessories.html">Accessories</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- About Us Link -->
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <!-- Contact Dropdown -->
+                <li class="dropdown">
+                    <a href="contact.html">Contact Us</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="signup.html">Sign Up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <!-- Product Grid Container -->
+            <div class="product-grid">
+                <!-- All product cards start here -->
+                <div class="product-grid">
+                    <!-- Laptop 1 -->
+                    <div class="product-card">
+                        <img alt="Laptop that is PS5 themed" src="Laptops/playstation5laptop-removebg-preview.png"/>
+                        <h2>PlayStation 5 Laptop Edition</h2>
+                        <p class="key-specs">
+                            AMD Ryzen 9 5900HX · RTX 3070 · 16" 144Hz · 32GB RAM · 1TB SSD
+                        </p>
+                        <div class="buttons">
+                            <a class="buy-button" href="#">$1,499.99 - Buy Now</a>
+                            <button class="learn-button" onclick="toggleSpecs(this)">Learn More</button>
+                        </div>
+                        <div class="specs hidden">
+                            <ul>
+                                <li>CPU: AMD Ryzen 9 5900HX</li>
+                                <li>GPU: NVIDIA GeForce RTX 3070</li>
+                                <li>Display: 16" 2560x1440, 144Hz</li>
+                                <li>RAM: 32GB DDR4</li>
+                                <li>Storage: 1TB NVMe SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Laptop 2 -->
+                    <div class="product-card">
+                        <img alt="Black laptop with red highlighted Keyboard" src="Laptops/rednblacklaptop-removebg-preview.png"/>
+                        <h2>Red & Black Stealth GS66</h2>
+                        <p class="key-specs">
+                            Intel Core i7-12700H · RTX 4060 · 17.3" 240Hz · 16GB RAM · 512GB SSD
+                        </p>
+                        <div class="buttons">
+                            <a class="buy-button" href="#">$1,299.99 - Buy Now</a>
+                            <button class="learn-button" onclick="toggleSpecs(this)">Learn More</button>
+                        </div>
+                        <div class="specs hidden">
+                            <ul>
+                                <li>CPU: Intel Core i7-12700H</li>
+                                <li>GPU: NVIDIA GeForce RTX 4060</li>
+                                <li>Display: 17.3" QHD, 240Hz</li>
+                                <li>RAM: 16GB DDR5</li>
+                                <li>Storage: 512GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Laptop 3 -->
+                    <div class="product-card">
+                        <img alt="Roblox themed laptop with background saying Roblox with white bold text" src="Laptops/robloxlaptopblue-removebg-preview.png"/>
+                        <h2>Roblox Blue Edition</h2>
+                        <p class="key-specs">
+                            AMD Ryzen 5 5600H · GTX 1650 · 15.6" 60Hz · 8GB RAM · 256GB SSD
+                        </p>
+                        <div class="buttons">
+                            <a class="buy-button" href="#">$599.99 - Buy Now</a>
+                            <button class="learn-button" onclick="toggleSpecs(this)">Learn More</button>
+                        </div>
+                        <div class="specs hidden">
+                            <ul>
+                                <li>CPU: AMD Ryzen 5 5600H</li>
+                                <li>GPU: NVIDIA GeForce GTX 1650</li>
+                                <li>Display: 15.6" Full HD, 60Hz</li>
+                                <li>RAM: 8GB DDR4</li>
+                                <li>Storage: 256GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Laptop 4 -->
+                    <div class="product-card">
+                        <img alt="Lotus Gaming Laptop" src="Laptops/Lotuslaptop-removebg-preview.png"/>
+                        <h2>Lotus Legion 5</h2>
+                        <p class="key-specs">
+                            AMD Ryzen 7 6800H · RTX 3070 Ti · 16" 165Hz · 32GB RAM · <br> 1TB SSD
+                        </p>
+                        <div class="buttons">
+                            <a class="buy-button" href="#">$2,059.00 - Buy Now</a>
+                            <button class="learn-button" onclick="toggleSpecs(this)">Learn More</button>
+                        </div>
+                        <div class="specs hidden">
+                            <ul>
+                                <li>CPU: AMD Ryzen 7 6800H</li>
+                                <li>GPU: NVIDIA GeForce RTX 3070 Ti</li>
+                                <li>Display: 16" WQXGA (2560x1600), 165Hz</li>
+                                <li>RAM: 32GB DDR5</li>
+                                <li>Storage: 1TB NVMe SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Phone 1 -->
+                    <div class="product-card">
+                        <img alt="Phone 1" src="phones/tik-removebg-preview.png"/>
+                        <h2>TikTok Gaming Phone</h2>
+                        <p class="key-specs">
+                            Snapdragon 778G · Adreno 642L · 6.55" AMOLED 90Hz · 8GB RAM · 128GB Storage
+                        </p>
+                        <div class="buttons">
+                            <a class="buy-button" href="#">$499.99 - Buy Now</a>
+                            <button class="learn-button" onclick="toggleSpecs(this)">Learn More</button>
+                        </div>
+                        <div class="specs hidden">
+                            <ul>
+                                <li>CPU: Qualcomm Snapdragon 778G</li>
+                                <li>GPU: Adreno 642L</li>
+                                <li>Display: 6.55" AMOLED, 90Hz</li>
+                                <li>RAM: 8GB</li>
+                                <li>Storage: 128GB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Phone 2 -->
+                    <div class="product-card">
+                        <img alt="Phone 2" src="phones/youtubephone-removebg-preview.png"/>
+                        <h2>YouTube Gaming Phone</h2>
+                        <p class="key-specs">
+                            Snapdragon 8 Gen 2 · Adreno 740 · 6.7" AMOLED 120Hz · 12GB RAM · 256GB Storage
+                        </p>
+                        <div class="buttons">
+                            <a class="buy-button" href="#">$899.90 - Buy Now</a>
+                            <button class="learn-button" onclick="toggleSpecs(this)">Learn More</button>
+                        </div>
+                        <div class="specs hidden">
+                            <ul>
+                                <li>CPU: Snapdragon 8 Gen 2</li>
+                                <li>GPU: Adreno 740</li>
+                                <li>Display: 6.7" AMOLED, 120Hz</li>
+                                <li>RAM: 12GB</li>
+                                <li>Storage: 256GB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Phone 3 -->
+                    <div class="product-card">
+                        <img alt="Phone 3" src="phones/spotifyphone-removebg-preview.png"/>
+                        <h2>Spotify Gaming Phone</h2>
+                        <p class="key-specs">
+                            MediaTek Dimensity 9200+ · Mali-G710 MC10 · 6.8" AMOLED 144Hz · 16GB RAM · 512GB 
+                        </p>
+                        <div class="buttons">
+                            <a class="buy-button" href="#">$799.90 - Buy Now</a>
+                            <button class="learn-button" onclick="toggleSpecs(this)">Learn More</button>
+                        </div>
+                        <div class="specs hidden">
+                            <ul>
+                                <li>CPU: MediaTek Dimensity 9200+</li>
+                                <li>GPU: Mali-G710 MC10</li>
+                                <li>Display: 6.8" AMOLED, 144Hz</li>
+                                <li>RAM: 16GB</li>
+                                <li>Storage: 512GB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Phone 4 -->
+                    <div class="product-card">
+                        <img alt="Phone 4" src="phones/crunchhhh-removebg-preview.png"/>
+                        <h2>Crunch Gaming Phone</h2>
+                        <p class="key-specs">
+                            Snapdragon 865 · Adreno 650 · 6.5" IPS LCD 90Hz · 8GB RAM · 128GB Storage
+                        </p>
+                        <div class="buttons">
+                            <a class="buy-button" href="#">$449.90 - Buy Now</a>
+                            <button class="learn-button" onclick="toggleSpecs(this)">Learn More</button>
+                        </div>
+                        <div class="specs hidden">
+                            <ul>
+                                <li>CPU: Snapdragon 865</li>
+                                <li>GPU: Adreno 650</li>
+                                <li>Display: 6.5" IPS LCD, 90Hz</li>
+                                <li>RAM: 8GB</li>
+                                <li>Storage: 128GB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Full Setup -->
+                    <div class="product-card">
+                        <img alt="Gaming PC Setup" src="shopstuff/copilot_gaming_pc-removebg-preview.png"/>
+                        <h2>Copilot Gaming Setup</h2>
+                        <p class="key-specs">
+                            Intel i9-13900K · RTX 4090 · 32GB DDR5 · 1TB SSD · RGB Peripherals
+                        </p>
+                        <div class="buttons">
+                            <a class="buy-button" href="#">$4,360.09 - Buy Now</a>
+                            <button class="learn-button" onclick="toggleSpecs(this)">Learn More</button>
+                        </div>
+                        <div class="specs hidden">
+                            <ul>
+                                <li>CPU: Intel Core i9-13900K</li>
+                                <li>GPU: NVIDIA GeForce RTX 4090</li>
+                                <li>RAM: 32GB DDR5</li>
+                                <li>Storage: 1TB NVMe SSD</li>
+                                <li>Peripherals: RGB Mechanical Keyboard & Gaming Mouse</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Roblox Full Gaming Setup -->
+                    <div class="product-card">
+                        <img alt="Roblox full gaming setup" src="shopstuff/robloxpc_full-removebg-preview.png"/>
+                        <h2>Roblox Full Gaming Setup</h2>
+                        <p class="key-specs">
+                            Intel i5-12400F · RTX 3060 · 16GB DDR4 · 512GB SSD · RGB Keyboard & Mouse
+                        </p>
+                        <div class="buttons">
+                            <a class="buy-button" href="#">$1,799.99 - Buy Now</a>
+                            <button class="learn-button" onclick="toggleSpecs(this)">Learn More</button>
+                        </div>
+                        <div class="specs hidden">
+                            <ul>
+                                <li>CPU: Intel Core i5-12400F</li>
+                                <li>GPU: NVIDIA GeForce RTX 3060</li>
+                                <li>RAM: 16GB DDR4</li>
+                                <li>Storage: 512GB SSD</li>
+                                <li>Peripherals: RGB Mechanical Keyboard & Gaming Mouse</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Ear Buds / Headphones -->
+                    <div class="product-card">
+                        <img alt="Lotus gaming headphones" src="accesories/shop_fortdisplay-removebg-preview.png"/>
+                        <h2>Lotus Gaming Headphones</h2>
+                        <p class="key-specs">
+                            Surround Sound · Noise Cancellation · Wireless · 20hr Battery
+                        </p>
+                        <div class="buttons">
+                            <a class="buy-button" href="#">$196.09 - Buy Now</a>
+                            <button class="learn-button" onclick="toggleSpecs(this)">Learn More</button>
+                        </div>
+                        <div class="specs hidden">
+                            <ul>
+                                <li>Audio: 7.1 Surround Sound</li>
+                                <li>Feature: Active Noise Cancellation</li>
+                                <li>Connectivity: Wireless Bluetooth 5.2</li>
+                                <li>Battery Life: Up to 20 hours</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Monitor -->
+                    <div class="product-card">
+                        <img alt="Lotus gaming monitor" src="accesories/monitor-removebg-preview.png"/>
+                        <h2>Lotus Gaming Monitor</h2>
+                        <p class="key-specs">
+                            27" Curved · 2560x1440 QHD · 165Hz · FreeSync & G-Sync Compatible
+                        </p>
+                        <div class="buttons">
+                            <a class="buy-button" href="#">$2,010.11 - Buy Now</a>
+                            <button class="learn-button" onclick="toggleSpecs(this)">Learn More</button>
+                        </div>
+                        <div class="specs hidden">
+                            <ul>
+                                <li>Display: 27" Curved QHD (2560x1440)</li>
+                                <li>Refresh Rate: 165Hz</li>
+                                <li>Adaptive Sync: FreeSync & G-Sync Compatible</li>
+                                <li>Response Time: 1ms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of product cards -->
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 Lotus Gaming. All rights reserved.</p>
+                <p>
+                    Follow us on:
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>,
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>,
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </p>
+            </div>
+        </footer>
+        <!-- Toggle product specs (show/hide details) -->
+        <script>
+            function toggleSpecs(button) {
+                // Get the next sibling (specs div) of the button's parent
+                const specs = button.parentElement.nextElementSibling;
+                // Toggle the 'hidden' class to show/hide specs
+                specs.classList.toggle('hidden');
+                // Change button text accordingly
+                button.textContent = specs.classList.contains('hidden') ? 'Learn more' : 'Show less';
+            }
+        </script>
+        <!-- Cart functionality -->
+        <script>
+            // Load cart from localStorage or initialize as empty array
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            // Get the cart icon span to update cart count
+            const cartIcon = document.querySelector('.icon-cart span');
+
+            // Update cart count in navbar
+            function updateCartCount() {
+                cartIcon.textContent = cart.length;
+            }
+
+            // Add event listeners to all buy buttons
+            document.querySelectorAll('.buy-button').forEach(button => {
+                button.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    // Extract price from button text using regex
+                    const text = button.textContent.trim();
+                    const priceMatch = text.match(/\$([\d,]+\.\d{2})/);
+                    const price = priceMatch ? parseFloat(priceMatch[1].replace(/,/g, '')) : 0;
+
+                    // Find product name from closest .product-card > h2
+                    let name = "Unknown Product";
+                    const productCard = button.closest('.product-card');
+                    if (productCard) {
+                        const title = productCard.querySelector('h2');
+                        if (title) name = title.textContent.trim();
+                    }
+
+                    // Add product to cart array
+                    cart.push({ name, price });
+                    // Save updated cart to localStorage
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    // Update cart count in navbar
+                    updateCartCount();
+                });
+            });
+
+            // Initialize cart count on page load
+            updateCartCount();
+        </script>
+    </body>
+</html>

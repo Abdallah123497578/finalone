@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+    <title>Modern Nav</title>
+    <style>
+        /* This sets everything to have no extra space */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This is the main body settings */
+
+
+/* This is the box that holds all about page stuff */
+.about-container {
+  max-width: 900px; /* Keeps the content from being too wide */
+  margin: 0 auto; /* Puts the box in the middle of the page */
+  padding: 20px;
+}
+
+/* This styles the headers */
+.about-container h2,
+.about-container h3 {
+  margin-bottom: 15px; /* Adds space below headers */
+  color: #222; /* Makes the header a bit darker */
+}
+
+/* This is for normal text */
+.about-container p {
+  margin-bottom: 15px; /* Adds space after paragraphs */
+  font-size: 18px; /* Makes the text easy to read */
+}
+
+/* This styles the list items */
+.about-container ul {
+  margin-left: 20px; /* Pushes the list to the right */
+  margin-bottom: 20px;
+}
+
+.about-container ul li {
+  margin-bottom: 10px; /* Adds space between points */
+  font-size: 17px;
+}
+
+/* This is for the image on the page */
+.about-container .about-img {
+  width: 100%; /* Makes image fit the page */
+  max-width: 600px; /* But not too big */
+  display: block;
+  margin: 20px auto; /* Puts it in the middle */
+  border-radius: 8px; /* Rounds the corners */
+}
+nav{
+    margin-bottom: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Lotus Gaming</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+            <!-- Shop Dropdown -->
+            <li class="dropdown">
+                <a href="shop.html">Shop Now</a>
+                <ul class="dropdown-menu">
+                    <li><a href="laptop.html">Laptops</a></li>
+                    <li><a href="pcs.html">PCs</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                </ul>
+            </li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <!-- Contact Dropdown -->
+            <li class="dropdown">
+                <a href="contact.html">Contact Us</a>
+                <ul class="dropdown-menu">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Main Content -->
+  <div class="about-container">
+
+    <h1>Welcome to Lotus Gaming</h1>
+    <p>
+      Lotus Gaming is your home for amazing gaming computers! We build and sell powerful PCs and laptops that are perfect for serious gamers and beginners alike.
+    </p>
+
+    <h2>⭐ Our Mission</h2>
+    <p>
+      We want to help every gamer play their best. Whether you’re just starting or already a pro, we believe everyone deserves fast, fun, and strong gaming gear.
+    </p>
+
+    <h2>🖥️ Why Choose Us?</h2>
+    <p>
+      🌟 Custom-made for gamers<br>
+      ⚡ Super fast computers<br>
+      🎮 Works great with games like Fortnite, Roblox, Minecraft, Call of Duty, and more!<br>
+      💸 Great prices that won’t break your wallet
+    </p>
+
+    <h2>🚀 What We Offer</h2>
+    <p>
+      - Gaming Laptops<br>
+      - Desktop PCs<br>
+      - Gaming Accessories (coming soon!)<br>
+      - Friendly customer support
+    </p>
+
+    <h2>🕹️ Customer Reviews</h2>
+    <div class="reviews">
+      <p><strong>“My Lotus Gaming laptop runs Roblox and Fortnite so fast. I love it!”</strong><br>— Jordan, Age 11</p>
+    </div>
+    <div class="reviews">
+      <p><strong>“This PC helped me win my first Call of Duty match. Super smooth!”</strong><br>— Emily, Age 13</p>
+    </div>
+    <div class="reviews">
+      <p><strong>“Best birthday gift ever. Thank you Lotus Gaming!”</strong><br>— Ahmed, Age 12</p>
+    </div>
+
+    <h2>💬 Got Questions?</h2>
+    <p>
+      Want to learn more or need help choosing a computer? Visit our <a href="contact.html">Contact</a> page. We’re happy to help!
+    </p>
+
+  </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Lotus Gaming. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>,
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>,
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--Sets the language for the document-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css"><!--Links to external stylesheet-->
+  <link rel="stylesheet" href="product.css"><!--Links to external stylesheet for product page-->  
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" /><!--Links to Google Fonts for Audiowide font-->
+  <title>Customer Complaint</title><!--Title of the page-->
+  <style>
+    body {/*makes it so all code here affects everything that is insode the body tag*/
+      font-family: 'Audiowide', sans-serif;/*Sets the font family to Audiowide*/
+      /*sans-serif is a type of font that does not have the little lines at the end of each letter*/
+      background-color: #f7f7f7;/*sets the background color to white*/
+      margin: 0;/*sets the margin of the entire page to zero*/
+      padding: 0;/*sets the padding for the entire page to zero*/
+      overflow-x: hidden;/*Makes so scrolling to the side is impossible*/
+    }
+
+    .container {
+      max-width: 600px;/*makes it so that the width doesnt go above 600px*/
+      margin: 50px auto;
+      background: #fff;/*sets the background color to white*/
+      padding: 30px 40px;
+      border-radius: 10px;/*makes the corners round*/
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);/*adds a shadow around the box*/
+    }
+
+    h2 {
+      text-align: center;/*aligns the text to the centre*/
+      margin-bottom: 25px;/*adds an invisible space under the text*/
+      color: #333;/* Sets the text color to a darker shade of gray*/
+    }
+
+    label {
+      display: block;/*Makes it so its the only thing on that line*/
+      margin-bottom: 8px;/*adds an invisible space under the label*/
+      font-weight: bold;/*Makes the text bold*/
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;/*gives it full width*/
+      padding: 10px;/* adds padding all around*/
+      margin-bottom: 18px;/*creates invisible space under*/
+      border: 1px solid #ccc;/*makes border around the text areas with 1px of thickness, a style of solid and a shade of white as the color*/
+      border-radius: 6px;/*Rounds the corners*/
+      font-size: 14px;/*Setsthe font size to 14px*/
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;/*Sets the minimum hieght of the text area to a 100px */
+    }
+
+    button {
+      font-family: 'myFont', sans-serif;
+      width: 100%;/*gives the button the full width*/
+      padding: 12px;/*Sets an invisible space all around inside the button*/
+      background-color: #111;/*Sets the background color to black*/
+      color: white;/*Sets the text color to white*/
+      font-size: 16px;/*Gives the text a font size of 16px*/
+      font-weight: bold;/*Gives the text boldness*/
+      border: none;/*removes all sorts/types of borders around the button*/
+      border-radius: 6px;/*makes the corners round*/
+      cursor: pointer;/*makes it so when you hover over the button the cursor changes form the jormal thing to the */
+      transition: background 0.3s ease;
+    }
+  /*makes it so when you hover over the button the background color changes to grey*/
+    button:hover {
+      background-color: #333;/*sets backgrond to gray*/
+    }
+
+    .success-message {
+      display: none;/*No display?*/
+      text-align: center;/*aligns to text*/
+      margin-top: 20px;/*adds space to the top*/
+      color: green;/*sets text color to green*/
+    }
+  </style>
+</head>
+<body>
+    <!-- Navbar code, same as other pages, just a normal nav with dropdown -->
+    <nav>
+        <div class="logo">
+            <h1>Lotus Gaming</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="shop.html">Shop Now</a>
+                <ul class="dropdown-menu">
+                    <li><a href="laptop.html">Laptops</a></li>
+                    <li><a href="pcs.html">PCs</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="contact.html">Contact Us</a>
+                <ul class="dropdown-menu">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+  <div class="container">
+    <h2>Customer Contact Form</h2>
+    <form id="complaintForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="order">Order Number (if applicable)</label>
+      <input type="text" id="order" name="order">
+
+      <label for="category"> Category</label>
+      <select id="category" name="category" required>
+        <option value="">Select a category</option>
+        <option value="website">Reviews</option>
+        <option value="product">Product Issue</option>
+        <option value="delivery">Delivery Problem</option>
+        <option value="billing">Billing Error</option>
+        <option value="customer_service">Customer Service</option>
+        <option value="karen">Karen Service</option>
+        <option value="trolling">Trolling</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message"> Details</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div class="success-message" id="successMessage">
+       Thank you! Your complaint has been submitted.
+    </div>
+  </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Lotus Gaming. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>,
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>,
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </p>
+        </div>
+    </footer>
+  <script>
+    document.getElementById("complaintForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("successMessage").style.display = "block";
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
+
